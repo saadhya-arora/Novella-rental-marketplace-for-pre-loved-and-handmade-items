@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+# Novella — Every Find Has a New Story
+
+Novella is a web-based rental marketplace for pre-loved products and handmade creations. It aims to make temporary access to useful items easier, helping people rent items they need without always having to purchase them.
+
+**Tagline:** Every Find Has a New Story.
+
+## About the Project
+
+People often buy products for occasional use while many useful belongings remain unused. Novella explores an alternative through a rental marketplace where users can browse items, view rental prices, create listings, and book items for a selected duration.
+
+The project focuses on a simple, accessible user experience with a minimal beige-and-ivory visual identity.
+
+## Features
+
+- **Browse Items:** Explore available products on the homepage.
+- **Search and Categories:** Find items using search and category filters.
+- **Item Details:** View item descriptions, categories, and daily rental prices.
+- **Seller Listings:** Create listings with a name, category, price, description, and optional image URL.
+- **Rental Duration:** Select a rental period for an item.
+- **Price Calculation:** Calculate the demo rental cost based on the daily price and selected duration.
+- **Booking Management:** Save and view demo bookings on the My Rentals page.
+- **Listing Management:** View and delete saved listings.
+- **Browser Storage:** Retain listing and booking data using browser localStorage.
+
+## Tech Stack
+
+- **Framework:** Next.js
+- **UI Library:** React
+- **Language:** TypeScript
+- **Styling:** CSS and JSX-based styling
+- **Storage:** Browser localStorage
+- **Development Tools:** Node.js and npm
+
+## Main Pages
+
+| Page | Purpose |
+|---|---|
+| `/` | Browse and search rental items |
+| `/sell` | Create and manage item listings |
+| `/bookings` | View saved demo bookings |
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Install Node.js and npm.
+
+### 1. Clone the repository
+
+```bash
+git clone YOUR_PUBLIC_REPOSITORY_URL
+```
+
+Replace `YOUR_PUBLIC_REPOSITORY_URL` with the actual public GitHub repository URL.
+
+### 2. Navigate to the project directory
+
+```bash
+cd novella-rental-marketplace
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the application
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Current Limitations
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This is a working prototype demonstrating the core marketplace experience.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Listings and bookings are stored in the browser using localStorage.
+- Data is not shared between different browsers or devices.
+- Image input accepts a public image URL; direct file upload is not implemented.
+- Real payments, a shared database, and user authentication are not implemented.
+- AI-based listing generation is not implemented in the current version.
 
-## Learn More
+## Future Improvements
 
-To learn more about Next.js, take a look at the following resources:
+- Add a shared database and backend API.
+- Implement user accounts and seller profiles.
+- Support direct image uploads.
+- Add secure rental transactions and payment integration.
+- Explore AI-assisted item categorisation and description generation.
+- Improve booking management and rental availability tracking.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Vision
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Novella encourages people to make better use of existing belongings by making useful and unique items accessible for temporary use.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Every item has a story. Pass it on to start a new chapter.**
